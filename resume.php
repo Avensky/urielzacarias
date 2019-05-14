@@ -1,7 +1,13 @@
+<?php $page="resume";?>
+<?php $headline="Professional&nbsp;Resume";?>
 <?php include("inc/header.php");?>
+<?php include("func/functions.php");?>
 
-<div id="content">
-	<object src="inc/resume.pdf" width="940px"><embed src="inc/resume.pdf"></embed></object>
+<?php 
+selected_page($page);
+heading($headline);
+?>
 
-</div>
+<?php include("word/resume.html");?>
+
 <?php include("inc/footer.php");?>
